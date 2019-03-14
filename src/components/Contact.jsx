@@ -24,6 +24,10 @@ class Contact extends Component {
             className="fas fa-sort-down"
             style={{ cursor: "pointer" }}
           />{" "}
+          <i
+            className="fas fa-times"
+            style={{ cursor: "pointer", float: "right", color: "red" }}
+          />
         </h4>
         {showContactInfo ? (
           <ul className="list-group">
