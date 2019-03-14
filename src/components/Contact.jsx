@@ -19,7 +19,11 @@ class Contact extends Component {
       <div className="card card-body mb-3">
         <h4>
           {contact.name}{" "}
-          <i onClick={this.onShowClick} className="fas fa-sort-down" />{" "}
+          <i
+            onClick={this.onShowClick}
+            className="fas fa-sort-down"
+            style={{ cursor: "pointer" }}
+          />{" "}
         </h4>
         {showContactInfo ? (
           <ul className="list-group">
