@@ -12,6 +12,10 @@ class Contact extends Component {
     });
   };
 
+  onDeleteClick = () => {
+    console.log("clicked");
+  };
+
   render() {
     const { contact } = this.props;
     const { showContactInfo } = this.state;
@@ -27,6 +31,7 @@ class Contact extends Component {
           <i
             className="fas fa-times"
             style={{ cursor: "pointer", float: "right", color: "red" }}
+            onClick={this.onDeleteClick}
           />
         </h4>
         {showContactInfo ? (
