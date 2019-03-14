@@ -13,7 +13,7 @@ class Contact extends Component {
   };
 
   onDeleteClick = () => {
-    console.log("clicked");
+    this.props.deleteClickHandler();
   };
 
   render() {
